@@ -34,7 +34,7 @@ APP_ID = os.environ.get("APP_ID")
 API_HASH = os.environ.get("API_HASH")
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
 UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL")
-OWNER= os.environ.get("OWNER")
+OWNER= [1610383727]
 PREMIUM= os.environ.get("PREMIUM")
 app = pyrogram.Client("app", api_id=APP_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
