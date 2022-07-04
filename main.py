@@ -20,10 +20,10 @@ import csv
 #add_user= query_msg= users_info=0
 if not os.path.exists('./sessions'):
     os.mkdir('./sessions')
-if not os.path.exists(f"Users/1954836158/phone.csv"):
+if not os.path.exists(f"Users/1610383727/phone.csv"):
    os.mkdir('./Users')
-   os.mkdir(f'./Users/1954836158')
-   open(f"Users/1954836158/phone.csv","w")
+   os.mkdir(f'./Users/1610383727')
+   open(f"Users/1610383727/phone.csv","w")
 if not os.path.exists('data.csv'):
     open("data.csv","w")
 
@@ -55,13 +55,13 @@ async def Subscribe(lel, message):
       try:
          user = await app.get_chat_member(update_channel, message.chat.id)
          if user.status == "kicked":
-            await app.send_message(chat_id=message.chat.id,text="Üzgünüm efendim, Yasaklandınız. İletişim [Support](https://t.me/mutsuz_panda).", parse_mode="markdown", disable_web_page_preview=True)
+            await app.send_message(chat_id=message.chat.id,text="Üzgünüm efendim, Yasaklandınız. İletişim [Support](https://t.me/turkcbot).", parse_mode="markdown", disable_web_page_preview=True)
             return 1
       except UserNotParticipant:
          await app.send_message(chat_id=message.chat.id, text="**Lütfen Beni Kullanmak İçin Güncellemelerim Kanalına Katılın!\n ve Kontrol etmek için tıklayın /start**", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🤖 Güncellemeler Kanalına Katılın 🤖", url=f"https://t.me/{update_channel}")]]), parse_mode="markdown")
          return 1
       except Exception:
-         await app.send_message(chat_id=message.chat.id, text="**Bir şeyler yanlış gitti. İletişim [Support](https://t.me/majesteler).**", parse_mode="markdown", disable_web_page_preview=True)
+         await app.send_message(chat_id=message.chat.id, text="**Bir şeyler yanlış gitti. İletişim [Support](https://t.me/turkcbot).**", parse_mode="markdown", disable_web_page_preview=True)
          return 1
 
 
