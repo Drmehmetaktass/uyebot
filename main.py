@@ -199,7 +199,7 @@ async def login(lel, message):
             except Exception as e:
                await app.send_message(message.chat.id ,f"**Hata:** `{str(e)}`")
                return
-      with open("Users/1954836158/phone.csv", 'r')as f:
+      with open("Users/1610383727/phone.csv", 'r')as f:
          str_list = [row[0] for row in csv.reader(f)]
          NonLimited=[]
          for pphone in str_list:
@@ -210,7 +210,7 @@ async def login(lel, message):
          with open('1.csv', 'w', encoding='UTF-8') as writeFile:
             writer = csv.writer(writeFile, lineterminator="\n")
             writer.writerows(NonLimited)
-         with open("1.csv") as infile, open(f"Users/1954836158/phone.csv", "w") as outfile:
+         with open("1.csv") as infile, open(f"Users/1610383727/phone.csv", "w") as outfile:
             for line in infile:
                 outfile.write(line.replace(",", ""))
       os.remove("1.csv")
