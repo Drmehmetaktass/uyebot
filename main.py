@@ -35,7 +35,7 @@ API_HASH = os.environ.get("API_HASH")
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
 UPDATES_CHANNEL = "ailemizegel"
 OWNER= [1610383727]
-PREMIUM= [{PREMIUM}]
+PREMIUM= os.environ.get[{PREMIUM}]
 app = pyrogram.Client("app", api_id=APP_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
 with open("data.csv", encoding='UTF-8') as f:
