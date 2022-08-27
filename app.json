@@ -10,7 +10,7 @@
     "manager",
     "3"
   ],
-  "repository": "hhttps://github.com/MacroKeke/Adderboq",
+  "repository": "hhttps://github.com/drmehmetaktass/uyebot",
   "env": {
     "APP_ID": {
       "description": "my.telegram.org dan alın.",
