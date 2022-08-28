@@ -93,7 +93,7 @@ async def phone(lel, message):
    if a==1:
       return
    if message.from_user.id not in PREMIUM:
-      await app.send_message(message.chat.id, f"**Artık Premium Kullanıcı değilsiniz\nLütfen sahibim ile iletişime geçin By @drmehmetaktass**")
+      await app.send_message(message.chat.id, f"**Premium Kullanıcı değilsiniz\nLütfen iletişime geçin  @drmehmetaktass**")
       return
    if not os.path.exists(f"Users/{message.from_user.id}/phone.csv"):
       os.mkdir(f'./Users/{message.from_user.id}')
@@ -115,7 +115,7 @@ async def phone(lel, message):
          await app.send_message(message.chat.id, f"**Yalnızca {100-a} Telefon numarası ekleyebilirsiniz \n\nMade with ❤️ By @drmehmetaktass**")
          return
       for i in range (1,n+1):
-         number = await app.ask(chat_id=message.chat.id, text="**Şimdi Telegram Hesabınızın Telefon Numarasını Uluslararası Formatta Gönderin. \n**Ülke Kodu** dahil. \nÖrnek: **+14154566376 = 14154566376 yalnızca +** değil\n\n❤️ By @drmehmetaktass**")
+         number = await app.ask(chat_id=message.chat.id, text="**Şimdi Telegram Hesabınızın Telefon Numarasını Uluslararası Formatta Gönderin. \n**Ülke Kodu** dahil. \nÖrnek: **+14154566376 = 14154566376 yalnızca +** Çıkart\n\n❤️  @drmehmetaktass**")
          phone = number.text
          if "+" in phone:
             await app.send_message(message.chat.id, """**Bahsedildiği gibi + dahil değildir\n\n❤️ By @drmehmetaktass**""")
@@ -147,7 +147,7 @@ async def login(lel, message):
    if a==1:
       return
    if message.from_user.id not in PREMIUM:
-      await app.send_message(message.chat.id, f"**Artık Premium Kullanıcı değilsiniz\n❤️ By @drmehmetaktass**")
+      await app.send_message(message.chat.id, f"** Premium Kullanıcı değilsiniz\n❤️ @drmehmetaktass**")
       return
    with open(f"Users/{message.from_user.id}/phone.csv", 'r')as f:
     r=[]
@@ -260,7 +260,7 @@ async def to(lel, message):
    if a==1:
       return
    if message.from_user.id not in PREMIUM:
-      await app.send_message(message.chat.id, f"**Artık Premium Kullanıcı değilsiniz\n❤️ By @drmehmetaktass**")
+      await app.send_message(message.chat.id, f"**Artık Premium Kullanıcı değilsiniz\n❤️  @drmehmetaktass**")
       return
    number = await app.ask(chat_id=message.chat.id, text="**Şimdi Çekilecek Grup Kullanıcı Adını Gönderin \n\n❤️ By @drmehmetaktass**")
    From = number.text
@@ -357,7 +357,7 @@ async def start(lel, message):
    if a==1:
       return
    if message.from_user.id not in PREMIUM:
-      await app.send_message(message.chat.id, f"**Artık Premium Kullanıcı değilsiniz\n❤️ By @drmehmetaktass**")
+      await app.send_message(message.chat.id, f"**Premium Kullanıcı değilsiniz\n❤️  @drmehmetaktass**")
       return
    try:
       with open(f"Users/{message.from_user.id}/phone.csv", 'r')as f:
@@ -389,7 +389,7 @@ async def start(lel, message):
    if a==1:
       return
    if message.from_user.id not in PREMIUM:
-      await app.send_message(message.chat.id, f"**Artık Premium Kullanıcı değilsiniz\n❤️ By @drmehmetaktass**")
+      await app.send_message(message.chat.id, f"**Premium Kullanıcı değilsiniz\n❤️ By @drmehmetaktass**")
       return
    try:
       with open(f"Users/{message.from_user.id}/phone.csv", 'r')as f:
@@ -493,7 +493,7 @@ async def button(app, update):
          but = InlineKeyboardMarkup([[InlineKeyboardButton("Users✅", callback_data="Users")], [InlineKeyboardButton("Broadcast💯", callback_data="Broadcast")],[InlineKeyboardButton("AddUser", callback_data="New")], [InlineKeyboardButton("Check Users", callback_data="Check")]])
          await app.send_message(chat_id=update.message.chat.id,text=f"**Welcome to Admin Pannel of Induced Bot\n\nMade with ❤️ By @drmehmetaktass **", reply_markup=but)
       else:
-         await app.send_message(chat_id=update.message.chat.id,text="**Bot sahibi değilsiniz \n\nMade with ❤️ @drmehmetaktass**")
+         await app.send_message(chat_id=update.message.chat.id,text="**Bot sahibi değilsiniz \n\n❤️ @drmehmetaktass**")
    elif "Broadcast" in k:
     try:
       query = await query_msg()
