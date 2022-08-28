@@ -79,7 +79,7 @@ async def start(lel, message):
    user_name = '@' + message.from_user.username if message.from_user.username else None
    await add_user(id, user_name)
    but = InlineKeyboardMarkup([[InlineKeyboardButton("✅ Giriş", callback_data="Login"), InlineKeyboardButton("✏️ Üye Ekle", callback_data="Adding") ],[InlineKeyboardButton("☎️ Numara Ekle", callback_data="Edit"), InlineKeyboardButton("📛 Numaralar", callback_data="Ish")],[InlineKeyboardButton("🛠️ Numara Sil", callback_data="Remove"), InlineKeyboardButton("✅Admin Panel", callback_data="Admin")]])
-   await message.reply_text(f"**Merhaba** `{message.from_user.first_name}` \n• **Ben Üye Çekme Botuyum ,\n\n» Bu Botu Kullanmak İstiyorsanız\nveya buna benzer bir bot yaptirmak istiyorsanız\n @drmehmetaktass**", reply_markup=but)
+   await message.reply_text(f"**Merhaba** `{message.from_user.first_name}` \n• **Ben Üye Çekme Botuyum ,\n\n» Bu Botu Kullanmak İstiyorsanız\nveya buna benzer bir bot yaptirmak istiyorsanız\n @drmehmetaktass @GOLGECERI**", reply_markup=but)
 
 
 
