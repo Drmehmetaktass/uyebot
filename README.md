@@ -1,10 +1,10 @@
 ### **İletişim**
 
-**Proje [Sahibi](https://t.me/MajesteSahip)**
+**Proje [Sahibi](https://t.me/drmehmetaktass)**
 
-**Support [Grup](https://t.me/majesteler)**
+**Support [Grup](https://t.me/turkcbot)**
 
-**Support [Channel](https://t.me/MajesteBotlar)**
+**Support [Channel](https://t.me/turkcbot)**
 
 
 ### 🚀 Heroku'ya dağıtın
